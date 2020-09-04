@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon/circle.png</file>
+        <file>icon/clear.jpg</file>
+        <file>icon/copy.png</file>
+        <file>icon/curve.png</file>
+        <file>icon/cut.png</file>
+        <file>icon/delete.png</file>
+        <file>icon/ellipse.png</file>
+        <file>icon/fangdajing.png</file>
+        <file>icon/hexagon.png</file>
+        <file>icon/juxing.png</file>
+        <file>icon/line.png</file>
+        <file>icon/mouse.jpg</file>
+        <file>icon/new.png</file>
+        <file>icon/open.png</file>
+        <file>icon/paste.png</file>
+        <file>icon/qingping.png</file>
+        <file>icon/quxian.png</file>
+        <file>icon/rect.png</file>
+        <file>icon/save.png</file>
+        <file>icon/shubiao.png</file>
+        <file>icon/shubiaofangfa.png</file>
+        <file>icon/suoxiao.png</file>
+        <file>icon/suoxiaojing-.png</file>
+        <file>icon/suoxiaojing.png</file>
+        <file>icon/suoxiaojingcopy.png</file>
+        <file>icon/triangle.png</file>
+        <file>icon/view.png</file>
+        <file>icon/zhixian.png</file>
+        <file>icon/color.png</file>
+        <file>icon/mainIcon.png</file>
+    </qresource>
+</RCC>

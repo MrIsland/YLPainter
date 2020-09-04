@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>YLPainter</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/icon/mainIcon.png</normaloff>:/icon/mainIcon.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_new"/>
+    <addaction name="action_open"/>
+    <addaction name="action_save"/>
+    <addaction name="separator"/>
+    <addaction name="action_close"/>
+    <addaction name="action_quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_help">
+    <property name="title">
+     <string>介绍</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_help"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_line"/>
+   <addaction name="action_curve"/>
+   <addaction name="action_rect"/>
+   <addaction name="action_triangle"/>
+   <addaction name="action_hexagon"/>
+   <addaction name="action_ellipse"/>
+   <addaction name="separator"/>
+   <addaction name="action_mouse"/>
+   <addaction name="action_delete"/>
+   <addaction name="action_clear"/>
+   <addaction name="separator"/>
+   <addaction name="action_magnifier"/>
+   <addaction name="action_lesson"/>
+   <addaction name="separator"/>
+   <addaction name="action_color"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_new">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/new.png</normaloff>:/icon/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建</string>
+   </property>
+  </action>
+  <action name="action_open">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/open.png</normaloff>:/icon/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/save.png</normaloff>:/icon/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="action_close">
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="action_quit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="action_line">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/zhixian.png</normaloff>:/icon/zhixian.png</iconset>
+   </property>
+   <property name="text">
+    <string>直线</string>
+   </property>
+   <property name="toolTip">
+    <string>直线</string>
+   </property>
+  </action>
+  <action name="action_curve">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/quxian.png</normaloff>:/icon/quxian.png</iconset>
+   </property>
+   <property name="text">
+    <string>曲线</string>
+   </property>
+   <property name="toolTip">
+    <string>曲线</string>
+   </property>
+  </action>
+  <action name="action_rect">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/juxing.png</normaloff>:/icon/juxing.png</iconset>
+   </property>
+   <property name="text">
+    <string>矩形</string>
+   </property>
+   <property name="toolTip">
+    <string>矩形</string>
+   </property>
+  </action>
+  <action name="action_mouse">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/shubiao.png</normaloff>:/icon/shubiao.png</iconset>
+   </property>
+   <property name="text">
+    <string>鼠标</string>
+   </property>
+   <property name="toolTip">
+    <string>鼠标</string>
+   </property>
+  </action>
+  <action name="action_clear">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/qingping.png</normaloff>:/icon/qingping.png</iconset>
+   </property>
+   <property name="text">
+    <string>清屏</string>
+   </property>
+  </action>
+  <action name="action_delete">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/delete.png</normaloff>:/icon/delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+   <property name="toolTip">
+    <string>删除</string>
+   </property>
+  </action>
+  <action name="action_triangle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/triangle.png</normaloff>:/icon/triangle.png</iconset>
+   </property>
+   <property name="text">
+    <string>三角形</string>
+   </property>
+   <property name="toolTip">
+    <string>三角形</string>
+   </property>
+  </action>
+  <action name="action_hexagon">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/hexagon.png</normaloff>:/icon/hexagon.png</iconset>
+   </property>
+   <property name="text">
+    <string>六边形</string>
+   </property>
+   <property name="toolTip">
+    <string>六边形</string>
+   </property>
+  </action>
+  <action name="action_ellipse">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/ellipse.png</normaloff>:/icon/ellipse.png</iconset>
+   </property>
+   <property name="text">
+    <string>椭圆</string>
+   </property>
+   <property name="toolTip">
+    <string>椭圆</string>
+   </property>
+  </action>
+  <action name="action_magnifier">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/fangdajing.png</normaloff>:/icon/fangdajing.png</iconset>
+   </property>
+   <property name="text">
+    <string>magnifier</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="action_lesson">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/suoxiaojingcopy.png</normaloff>:/icon/suoxiaojingcopy.png</iconset>
+   </property>
+   <property name="text">
+    <string>lesson</string>
+   </property>
+  </action>
+  <action name="action_color">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/color.png</normaloff>:/icon/color.png</iconset>
+   </property>
+   <property name="text">
+    <string>color</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
